@@ -1,6 +1,5 @@
 package ui
 
-import com.soywiz.korge.annotations.KorgeExperimental
 import com.soywiz.korge.input.onClick
 import com.soywiz.korge.ui.*
 import com.soywiz.korge.view.*
@@ -13,7 +12,6 @@ import ui.StatusText.*
 import kotlin.time.Duration.Companion.milliseconds
 
 
-@KorgeExperimental
 inline fun Container.ui1(
     codeLength: Int,
     codeItems: List<UIHorizontalFill.()->View>,
@@ -23,7 +21,6 @@ inline fun Container.ui1(
 ) = append(UI1(codeLength, codeItems, width, height)).apply(block)
 
 
-@KorgeExperimental
 class UI1 private constructor(
     width: Double,
     height: Double,
